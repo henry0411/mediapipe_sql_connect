@@ -1,0 +1,27 @@
+將此檔案附檔名更改為.py
+def msg():
+
+    # 資料庫連線資訊
+    #host='serverip'
+    host="serverip"
+    user='資料庫名稱'
+    passwd='資料庫密碼'
+    db="連接的資料庫"
+    
+    msgdata=(host,user,passwd,db)
+    return msgdata
+
+'''
+    dbhost,dbuser,dbpasswd,dbdb,dbport,dbcharset=sqlmsg.msg()
+    # 建立Connection物件
+    db_settings = {
+        "host": dbhost,
+        "port": 3306,
+        "user": dbuser,
+        "password": dbpasswd,
+        "db": dbdb,
+        "charset": "utf8"
+        }
+    conn = pymysql.connect(**db_settings)
+    '''
+
